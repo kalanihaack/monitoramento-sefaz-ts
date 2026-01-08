@@ -1,0 +1,23 @@
+{
+  "name": "saipos-sefaz-monitor",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Monitor de instabilidades da SEFAZ com notificações via Discord",
+  "main": "dist/Program.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/Program.ts",
+    "build": "tsc",
+    "serve": "node dist/Program.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/Program.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
